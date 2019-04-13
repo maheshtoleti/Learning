@@ -33,6 +33,7 @@ namespace LearnAndPracticeAPI
             services.AddDbContext<QuestionBankContext>
                     (options => options.UseSqlServer(connection));
             //Added to enable OData functionality
+            //https://channel9.msdn.com/Shows/On-NET/Supercharging-your-Web-APIs-with-OData-and-ASPNET-Core
             services.AddOData();
         }
 
